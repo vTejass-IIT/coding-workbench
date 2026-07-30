@@ -15,24 +15,5 @@ export class TreeNode {
 }
 
 export function levelOrder(root: TreeNode | null): number[][] {
-  if (root === null) return [];
-
-  const result: number[][] = [];
-  let queue: TreeNode[] = [root];
-
-  while (queue.length > 0) {
-    const currentLevel: number[] = [];
-    const nextQueue: TreeNode[] = [];
-
-    for (const node of queue) {
-      currentLevel.push(node.val);
-      if (node.left) nextQueue.push(node.left);
-      if (node.right) nextQueue.push(node.right);
-    }
-
-    result.push(currentLevel);
-    queue = nextQueue;
-  }
-
-  return result;
+  throw new Error("not implemented");
 }

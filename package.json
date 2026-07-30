@@ -1,5 +1,12 @@
 {
-  "name": "interview-prep",
+  "name": "coding-workbench",
+  "version": "1.0.0",
+  "description": "A pattern-organized TypeScript practice workbench for interview-style coding problems, with a Vitest test suite for every problem.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vTejass-IIT/coding-workbench.git"
+  },
   "private": true,
   "type": "module",
   "scripts": {
