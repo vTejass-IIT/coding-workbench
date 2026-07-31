@@ -1,0 +1,22 @@
+name: Typecheck
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  typecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      # Every problem stub is unsolved by design (`throw new Error("not implemented")`),
+      # so `npm test` is expected to fail here. This job only confirms the scaffolding
+      # itself — every stub + test file — still compiles cleanly.
+      - run: npm run typecheck

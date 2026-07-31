@@ -1,5 +1,7 @@
 # coding-workbench
 
+[![Typecheck](https://github.com/vTejass-IIT/coding-workbench/actions/workflows/typecheck.yml/badge.svg)](https://github.com/vTejass-IIT/coding-workbench/actions/workflows/typecheck.yml)
+
 A local practice workbench for interview-style coding problems: ~150 problems in TypeScript,
 organized by algorithmic pattern (not just by LeetCode number), each with a pre-written
 [Vitest](https://vitest.dev/) test suite. Clone it, pick a problem, implement the function,

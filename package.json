@@ -2,10 +2,22 @@
   "name": "coding-workbench",
   "version": "1.0.0",
   "description": "A pattern-organized TypeScript practice workbench for interview-style coding problems, with a Vitest test suite for every problem.",
+  "keywords": [
+    "typescript",
+    "algorithms",
+    "data-structures",
+    "leetcode",
+    "interview-prep",
+    "vitest"
+  ],
+  "author": "vTejass-IIT",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/vTejass-IIT/coding-workbench.git"
+  },
+  "engines": {
+    "node": ">=20"
   },
   "private": true,
   "type": "module",
@@ -13,7 +25,8 @@
     "dev": "tsx watch src/scratch.ts",
     "run": "tsx src/scratch.ts",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",
